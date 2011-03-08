@@ -9,6 +9,7 @@ gem "bcrypt-ruby", :require => "bcrypt"
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2'
+gem 'heroku'
 
 # Use unicorn as the web server
 # gem 'unicorn'
