@@ -1,0 +1,31 @@
+// To configure blueprint, edit the partials/base.sass file.
+@import "partials/base";
+@import "partials/page";
+@import "partials/form";
+@import "partials/two_col";
+@import "compass";
+@import "compass/css3/border-radius";
+
+body.blueprint {
+  @include blueprint(true); }
+
+#session_nav {
+    @include column($blueprint-grid-columns);
+    text-align: right;
+ }
+
+#flash_part {
+    @include column($blueprint-grid-columns);
+    text-indent: 165px; 
+    background-color: $notice-bg-color; }
+
+#controls {
+    @include column($pl-left-side-columns);
+    @include border-radius(4px 4px);
+    text-align: center;
+    background-color: #cccccc;
+    @include box-shadow; }
+
+#content_area {
+    @include column($pl-content-columns, true); }
+

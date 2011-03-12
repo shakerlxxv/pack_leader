@@ -8,6 +8,8 @@ gem "bcrypt-ruby", :require => "bcrypt"
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+gem "compass", ">= 0.10.6"
+gem "haml", ">= 3.0.25"
 gem 'mysql2'
 gem 'heroku'
 

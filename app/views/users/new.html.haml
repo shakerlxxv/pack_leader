@@ -1,0 +1,29 @@
+%h1 Users#new
+= form_for @user do |f|
+  - if @user.errors.any? 
+    .error_messages
+      %h2 Form is invalid
+      %ul
+        - for message in @user.errors.full_messages 
+          %li
+            = message
+  %p
+    = f.label :email 
+    = f.text_field :email
+    %br
+  %p
+    = f.label :name 
+    = f.text_field :name 
+    %br
+  %p
+    = f.label :password
+    = f.password_field :password 
+    %br 
+  %p
+    = f.label :password_confirmation 
+    = f.password_field :password_confirmation 
+    %br
+  %p.button 
+    = f.submit 
+  %button#test_button{ :value => "Test Me" }
+    Test Me Too

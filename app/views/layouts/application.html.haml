@@ -1,0 +1,11 @@
+%html
+  %head
+    %title Pack Leader
+    = render 'layouts/styles'
+  %body.blueprint
+    .container
+      = render 'layouts/session_nav'
+      = render 'layouts/flash_part'
+      = render 'layouts/controls'
+      #content_area
+        = yield
