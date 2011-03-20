@@ -1,13 +1,16 @@
+$(document).ready(function(){
+   // Your code here
+    $(function() {
+	    $( ".form_button" ).button({
+		text: true
+	    });
+    });
 
-$(function() {
-        $( "#user_submit" ).button({
-            icons: {
-                       primary: "ui-icon-locked"
-                   }, text: true
-        });
+    $(function() {
+	    $( "#controls_nav" ).accordion({ header: 'a.menu', 
+	   collapsible: true });
+    });
 
-        $( "#test_button" ).button({
-            icons: { primary: "ui-icon-locked" },
-            text: true
-        });
 });
+
+

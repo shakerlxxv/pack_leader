@@ -1,4 +1,4 @@
-%h1 Users#new
+%h1 Join the Pack!
 = form_for @user do |f|
   - if @user.errors.any? 
     .error_messages
@@ -24,6 +24,4 @@
     = f.password_field :password_confirmation 
     %br
   %p.button 
-    = f.submit 
-  %button#test_button{ :value => "Test Me" }
-    Test Me Too
+    = f.submit :value => 'Register', :class => 'form_button'
