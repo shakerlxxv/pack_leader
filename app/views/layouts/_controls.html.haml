@@ -2,11 +2,9 @@
   #controls_nav
     %a.menu{:href=>'#'}Home
     .control_menu_list
-      %ul
-        %li
-          Overview
-        %li 
-          Profile
+      = link_to "Home",home_path, :class => "control_link"
+      = link_to "About",about_path, :class => "control_link"
+      = link_to "Help",help_path, :class => "control_link"
     %a.menu{:href=>'#'}Pack Lists
     .control_menu_list
       %ul

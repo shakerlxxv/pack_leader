@@ -1,4 +1,6 @@
 #session_nav
+  %a{:href=>root_path}
+    = image_tag "pack_leader_logo.gif", :class => 'logo_img'
   - if current_user 
     Logged in as
     = current_user.name

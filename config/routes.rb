@@ -1,4 +1,11 @@
 PackLeader::Application.routes.draw do
+  #get "pages/home"
+  #get "pages/about"
+  #get "pages/help"
+  get "home" => "pages#home", :as => "home"
+  get "about" => "pages#about", :as => "about"
+  get "help" => "pages#help", :as => "help"
+
   #get "sessions/new"
   get "log_in" => "sessions#new", :as => "log_in"
   get "log_out" => "sessions#destroy", :as => "log_out"
@@ -6,7 +13,7 @@ PackLeader::Application.routes.draw do
 
   #get "users/new"
   get "sign_up" => "users#new", :as => "sign_up"
-  root :to => "users#new"
+  root :to => "pages#home"
   resources :users
 
   # The priority is based upon order of creation:
